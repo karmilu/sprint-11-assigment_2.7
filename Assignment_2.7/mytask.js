@@ -5,3 +5,8 @@ const HydrateFn = setInterval(function(){
 
 // Step 2
 setTimeout(StopFn, 1 * 60 * 1000)
+
+// Step 3
+function StopFn() {
+    clearInterval(HydrateFn);
+}
